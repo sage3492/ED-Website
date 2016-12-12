@@ -1,0 +1,305 @@
+<html>
+    <head>
+    <title>Elegance Decor</title>
+          <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel= "stylesheet" href= "elegancecontact.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+         <header>
+   
+            
+            <nav class="navbar-default nav-test">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="logo" href="elegancehome.html"><img src="Elegance-Decor-Logo-02.png" class="logo" ></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="eleganceabout.html">About</a></li>
+                    <li><a href="elegancegallery.html">Gallery</a></li>
+                    <li><a href="elegancecapabilities.html">Capabilities</a></li>
+                    <li><a href="elegancereviews.html">Reviews</a></li>
+                    <li><a href="eleganceblog.html">Blog</a></li>
+                    <li><a href="elegancemedia.html">Media</a></li>
+                    <li><a href="elegancecontact.html">Contact</a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	</header>
+
+        </head>
+    
+    
+    
+    
+    <body>
+<div class="wrapper">
+
+</div>
+         
+       <form name="userForm" method="post" action="send_form_email.php" ng-submit="submitForm()" novalidate ng-app="validationApp">  
+           
+  <div class="col-2" ng-class="{ 'has-error' : userForm.firstname.$invalid && !userForm.firstname.$pristine }">
+    <label>
+      First Name *
+      <input placeholder="What is your first name?" id="firstname" name="firstname" tabindex="1" ng-model="user.firstname" required>
+        <p ng-show="userForm.firstname.$invalid && !userForm.firstname.$pristine" class="help-block">Your first name is required.</p>
+    </label>
+  </div>
+    
+     <div class="col-2" ng-class="{ 'has-error' : userForm.lastname.$invalid && !userForm.lastname.$pristine }">
+    <label>
+      Last Name *
+      <input placeholder="What is your last name?" id="lastname" name="lastname" tabindex="2" ng-model="user.lastname" required>
+        <p ng-show="userForm.lastname.$invalid && !userForm.lastname.$pristine" class="help-block">Your last name is required.</p>
+    </label>
+  </div>
+           
+<div class="col-2" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+    <label>
+      Email *
+      <input placeholder="What is your email address?" id="email" name="email" tabindex="3" ng-model="user.email" required>
+        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+    </label>
+  </div>
+           
+           <div class="col-2" ng-class="{ 'has-error' : userForm.phone.$invalid && !userForm.phone.$pristine }">
+    <label>
+      Phone Number *
+      <input placeholder="What is your phone number?" id="phone" name="phone" tabindex="4" ng-model="user.phone" required>
+        <p ng-show="userForm.phone.$invalid && !userForm.phone.$pristine" class="help-block">A phone number is required.</p>
+    </label>
+  </div>
+           
+
+ 
+  <div class="col-3">
+    <label>
+      Meeting Preference
+      <select tabindex="5">
+          <option>Choose One</option>
+        <option>In-Person</option>
+        <option>Webinar</option>
+        <option>Phone</option>
+      </select>
+    </label>
+  </div>
+           
+           
+  <div class="col-3">
+    <label>
+      Event Date
+      <input class="col3box" placeholder="What date is your event?" id="date" name="date" tabindex="6">
+    </label>
+  </div>
+ <div class="col-3">
+    <label>
+      Guest Count
+      <input class="col3box" placeholder="How many will be attending?" id="guest" name="guest" tabindex="7">
+    </label>
+  </div>
+           
+           <div class="col-3">
+    <label>
+      Venue
+      <input class="col3box" placeholder="Please enter venue name" id="venue" name="venue" tabindex="13">
+    </label>
+  </div>
+    
+               
+           
+           
+           
+       <div class="col-3">
+      <label>
+      Decor Budget *
+      <select tabindex="8">
+          <option>Choose One</option>
+        <option>Less than $8K</option>
+        <option>$9K - $14K </option>
+        <option>$15K - $20K</option>
+          <option>$21K - $26K</option>
+          <option>$27K - $32K</option>
+          <option>$33K - $38K</option>
+           <option>$39K - $44K</option>
+           <option>$45K - $50K</option>
+          <option>$51K - $56K</option>
+          <option>$57K - $62K</option>
+          <option>$63K - 69K</option>
+          <option>More than $70K</option>
+      </select>
+    </label>
+  </div> 
+            
+            
+            
+  <div class="col-2">
+    <label>
+        Event 1
+      <select tabindex="9">
+          <option>Choose One</option>
+        <option>Hindu Wedding</option>
+        <option>Christian Wedding</option>
+          <option>Sikh Wedding</option>
+        <option>Islamic Wedding</option>
+          <option>Reception</option>
+          <option>Sangeet</option>
+           <option>Garba</option>
+           <option>Mehndi</option>
+          <option>Corporate Event</option>
+          <option>Celebration</option>
+          <option>Other</option>
+      </select>
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Event 2
+      <select tabindex="10">
+          <option>Choose One</option>
+        <option>Hindu Wedding</option>
+        <option>Christian Wedding</option>
+          <option>Sikh Wedding</option>
+        <option>Islamic Wedding</option>
+          <option>Reception</option>
+          <option>Sangeet</option>
+           <option>Garba</option>
+           <option>Mehndi</option>
+          <option>Corporate Event</option>
+          <option>Celebration</option>
+          <option>Other</option>
+      </select>
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Event 3
+      <select tabindex="11">
+          <option>Choose One</option>
+       <option>Hindu Wedding</option>
+        <option>Christian Wedding</option>
+          <option>Sikh Wedding</option>
+        <option>Islamic Wedding</option>
+          <option>Reception</option>
+          <option>Sangeet</option>
+           <option>Garba</option>
+           <option>Mehndi</option>
+          <option>Corporate Event</option>
+          <option>Celebration</option>
+          <option>Other</option>
+      </select>
+    </label>
+  </div>
+        <div class="col-2">
+    <label>
+      Event 4
+      <select tabindex="12">
+          <option>Choose One</option>
+        <option>Hindu Wedding</option>
+        <option>Christian Wedding</option>
+          <option>Sikh Wedding</option>
+        <option>Islamic Wedding</option>
+          <option>Reception</option>
+          <option>Sangeet</option>
+           <option>Garba</option>
+           <option>Mehndi</option>
+          <option>Corporate Event</option>
+          <option>Celebration</option>
+          <option>Other</option>
+      </select>
+    </label>
+  </div>
+            
+           
+           
+           
+              <div class="col-4">
+    <label>
+      How did you hear about us? *
+      <select tabindex="14">
+          <option>Choose One</option>
+        <option>Family/Friend</option>
+        <option>Web Search</option>
+        <option>Magazine Article</option>
+          <option>Facebook</option>
+          <option>Instagram</option>
+          <option>Pinterest</option>
+           <option>Bridal Expo</option>
+           <option>Other</option>
+      </select>
+    </label>
+  </div>
+              
+  <div class="col-4">
+    <label>
+      Additional Comments
+      <input placeholder="" id="addcom" name="addcom" tabindex="15">
+    </label>
+  </div>
+  <div class="col-4">
+     <label class= "upload">
+         Upload Inspiration
+      <div action="#" method="post">
+          <input type="file" name="inspiration" tabindex="16"/><br/></div>
+    </label>
+  </div>
+            <center><div class="g-recaptcha" data-sitekey="6LcYkw4UAAAAACnUiBtp625adTi66RXT8DviCMHU" ></div></center>
+           
+  <div class="col-submit">
+    <label><button type="col-submit"  name="col-submit" class="col-submit" class="btn btn-primary" ng-disabled="userForm.$invalid"><img src="button_submit.png" height="30" width="100" tabindex="17"></button></label>
+      
+  </div>          
+          
+           
+            </form>
+             
+        
+       <script src="elegancecontact.js"></script> 
+       
+        
+        
+    </body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer>
+    <div class="sticky-bar">
+<div class="sticky-bar-inner">
+    <ul id="footerlist">
+        <li id="address">1508 Louis Avenue Elk Grove Village, IL 60007</li>
+        <li><a href="https://www.instagram.com/elegancedecor_chicago/?hl=en"target="_blank"><img src='iconinstagram.png'height="30px" width="30px"></a></li>
+        
+    <li><a href="https://www.facebook.com/elegancedecorchicago/"target="_blank"><img src="iconfacebook.png" height="30px" width="30px"></a></li>
+    <li><a href="https://www.pinterest.com/elegancedecor/"target="_blank"><img src="iconpinterest.png" height="30px" width="30px"></a></li>
+    <li><a href="https://www.snapchat.com/add/elegancedecor"><img src="iconsnapchat.png" height="30px" width="30px"></a></li>
+        <li><a href="#"><img src="iconemail.png" height="30px" width="30px"></a></li>
+</ul>
+        </div></div>
+    </footer>
+
+    
+</html>

@@ -1,0 +1,268 @@
+
+/*top responsive navbar*/
+body {
+  margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+  overflow: scroll;
+    background-color: white;
+}
+
+
+.nav-test {
+    background-color: black !important;
+    border: white !important;
+}
+
+
+
+.logo {
+height: 140px !important;
+    width:150px;
+    padding-top: 0px !important;
+    padding-bottom: 8px;
+}
+
+.navbar-nav li a {
+    font-family: 'Century Gothic', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 50;
+    height: 40px;
+    margin-top: 10px;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: floralwhite !important;
+    padding-top: 50px;
+}
+
+.nav-test a:hover {
+  color: darkgoldenrod !important;
+    text-decoration: none;
+
+}
+
+
+/*background image*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+html, body{
+  height: 100%;
+}
+
+body { 
+			background-image: url(flowerlayer.jpg) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+  
+}
+
+div, body{
+  margin: 0;
+  padding: 0;
+   font-family: 'Century Gothic', sans-serif;
+  
+}
+.wrapper {
+
+  width: 100%; 
+}
+
+    
+    
+
+    
+    
+    
+    /* form */
+.rc-anchor-light !important{
+    background: none !important;
+    border: none !important;
+    color: floralwhite !important;
+}
+   
+    form {
+  display: block;
+  margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 100px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 5px;
+  font-size: 0;
+        margin-top: 65px;
+     
+}
+
+
+form > div > label {
+  padding: 10px 10px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: floralwhite;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: 100;
+  cursor: pointer;
+}
+form > div.switch > label {
+  padding: 16px 20px 13px;
+}
+ 
+
+ 
+
+
+input.col3box {
+    width: 180px !important;
+}
+ 
+label > input {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 27px;
+  line-height: 27px;
+  padding: 7px 5px 3px;
+  border: none;
+  outline: none;
+  color: #555;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  opacity: .6;
+  transition: all linear .3s;
+    height: 34px;
+    width: 220px;
+}
+
+
+ 
+.col-submit {
+  text-align: center;
+  
+}
+ 
+label > select {
+  display: block;
+  width: 100%;
+  padding: 0;
+  color: #555;
+  margin: 16px 0 6px;
+  font-weight: 100;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 13px;
+  opacity: 0.8;
+   color: floralwhite;
+  transition: all linear .3s;
+}
+ 
+label > input:focus, label > select:focus {
+  opacity: 1;
+}
+    
+.help-block {
+     font-family: 'Century Gothic', sans-serif;
+    font-size: 10;
+}
+
+
+ 
+    
+    /* mobile stuff */
+    @media(min-width: 1180px){
+  form > div { 
+      display: inline-block; 
+        }
+  .col-submit { 
+      display: block; 
+        }
+ 
+        
+        
+  .col-2 { box-shadow: none; 
+      border: none; 
+        }
+  
+  .col-2 { width: 25%;
+        height: 15%;
+        }
+.col-3 { width: 20%;
+      height: 15%;
+        }
+    .col-4 {
+        width: 33.3%;
+        height:15%;
+    }
+        
+        }
+  .col-submit button {margin: 0 auto; 
+        background: none;
+      border: none;
+      
+      
+        }
+}
+    
+
+
+/*bottom sticky bar*/
+    .sticky-bar {
+background: rgba(0, 0, 0, 0.7);
+
+bottom: 0;
+color: #fff;
+font-weight: 700;
+left:0;
+margin: 0;
+opacity: 0.9;
+padding: 0;
+position:fixed;
+        height: 35px;
+width: 100%;
+z-index:99999;
+}
+
+.sticky-bar-inner {
+margin:0 auto;
+padding: 2px 0;
+text-align: right;
+width:90%;
+}
+   
+    #footerlist li
+{
+  display: inline;
+    margin-right: 10px;
+  list-style-type: none;
+    
+}
+    
+    #address {
+     text-align: left;
+        font-family: 'Century Gothic', sans-serif;
+        color: floralwhite;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 12;
+    }
+    
+    
+
+    
+    
+    
+    
