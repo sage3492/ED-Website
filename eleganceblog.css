@@ -53,27 +53,467 @@ html, body {
 /* top nav end*/
 
 
-body { 
-			background-image: url(flowerlayer.jpg) ;
-			background-position: bottom;
-			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-  
-}
-
-div, body{
-  margin: 0;
-  padding: 0;
-  
-}
-.wrapper {
-
-  width: 100%; 
-}
 
 
 /*blog styling*/
+
+body,html {
+	margin:0;
+	padding:0;
+}
+
+/*
+  Effect
+*/
+#slides-holder {
+	position:relative;
+	width:100%;
+}
+
+.slide {
+	position:relative;
+	width:100%;
+	top:0;
+	left:0;
+    
+    
+}
+
+.slide.fixed {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+    
+}
+
+.slide-fake-height {
+	position:relative;
+	display:none;
+    
+}
+
+.slide-fake-height.visible {
+	display:block;
+    
+}
+
+/*
+  Demo styles
+*/
+
+h3 {
+    padding-top: 5;
+    padding-left: 10;
+    font-size: 12;
+    color: floralwhite;
+    opacity: 0.6;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+h6 {
+    padding-top: 5;
+    padding-left: 10;
+    font-size: 12;
+    color: black;
+    opacity: 0.6;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+img.allimages {
+    border: darkgoldenrod !important;
+    border-style: double !important;
+}
+
+.fade-text {
+	display:inline-block;
+	position:absolute;
+	font-family: 'Century Gothic', sans-serif;
+        -webkit-font-smoothing: antialiased;
+	font-size:60px;
+	opacity: 0.6;
+	-webkit-transition:all 500ms ease-out;
+	-moz-transition:all 500ms ease-out;
+	-o-transition:all 500ms ease-out;
+	transition:all 500ms ease-out;
+}
+
+.beginning{
+    display:inline-block;
+	position:absolute;
+	font-family: 'Century Gothic', sans-serif;
+        -webkit-font-smoothing: antialiased;
+	font-size:60px;
+	opacity:.5;
+	-webkit-transition:all 500ms ease-out;
+	-moz-transition:all 500ms ease-out;
+	-o-transition:all 500ms ease-out;
+	transition:all 500ms ease-out;
+}
+}
+
+
+.fixed .fade-text {
+	opacity:1;
+}
+
+.slide {
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center center;
+	background-repeat:repeat;
+}
+
+	#slide-1 {
+		background-image:url(flower.jpeg);
+	}
+	
+		#slide-1 .beginning {
+            color:floralwhite;
+			left:30%;
+			top:10%;
+		}
+	
+	#slide-2 {
+		background-image:url(babyblogbg.jpg);
+	}
+	
+		#slide-2 .fade-text {
+            color:floralwhite;
+            left:10%;
+			top:5%;
+			
+		}
+	
+	#slide-3 {
+		background-image:url(springblogbg.jpg);
+	}
+	
+		#slide-3 .fade-text {
+		 color: black;
+			left:10%;
+			top:5%;
+		}
+	
+	#slide-4 {
+		background-image:url(colorblog.jpg);
+	}
+	
+		#slide-4 .fade-text {
+            color: black;
+			left:10%;
+			top:5%;
+		}
+	
+	#slide-5 {
+		background-image:url(sangeetbg.jpg);
+	}
+	
+		#slide-5 .fade-text {
+            color: floralwhite;
+			left:50%;
+			top:5%;
+		}
+	
+	#slide-6 {
+		background-image:url(copybg.jpg);
+	}
+	
+		#slide-6 .fade-text {
+		  color: floralwhite;
+			left:10%;
+			top:5%;
+		}
+#slide-7 {
+		background-image:url(headtablebg.jpg);
+	}
+	
+		#slide-7 .fade-text {
+		  color: black;
+			left:10%;
+			top:5%;
+            font-size: 40;
+		}
+#slide-8 {
+		background-image:url(outdoorbg.jpg);
+	}
+	
+		#slide-8 .fade-text {
+		  color: black;
+            background: white;
+			left:8%;
+			top:9%;
+            font-size: 40;
+		}
+
+#slide-9 {
+		background-image:url(stressbg.jpg);
+	}
+	
+		#slide-9 .fade-text {
+		  color: floralwhite;
+			left:2%;
+			top:8%;
+            font-size: 40;
+		}
+
+#slide-10 {
+		background-image:url(tabletypebg.jpg);
+	}
+	
+		#slide-10 .fade-text {
+		  color: floralwhite;
+			left:15%;
+			top:5%;
+            font-size: 60;
+		}
+#slide-11 {
+		background-image:url(dreamybg.jpg);
+	}
+	
+		#slide-11 .fade-text {
+		  color: black;
+			left:10%;
+			top:8%;
+            font-size: 60;
+		}
+#slide-12 {
+		background-image:url(headtablebg.jpg);
+	}
+	
+		#slide-12 .fade-text {
+		  color: black;
+			left:10%;
+			top:5%;
+            font-size: 40;
+		}
+#slide-13 {
+		background-image:url(headtablebg.jpg);
+	}
+	
+		#slide-13 .fade-text {
+		  color: black;
+			left:10%;
+			top:5%;
+            font-size: 40;
+		}
+#slide-14 {
+		background-image:url(headtablebg.jpg);
+	}
+	
+		#slide-14 .fade-text {
+		  color: black;
+			left:10%;
+			top:5%;
+            font-size: 40;
+		}
+
+
+
+
+
+p {
+    padding-top: 100;
+    padding-left: 120;
+}
+
+.higher {
+    padding-top: 55;
+    padding-left: 120;
+}
+
+
+img.blog1pic {
+    float: left;
+    margin-right: 40;
+    position: relative;
+    object-position: bottom;
+    max-height: 400;
+    max-width: 400;
+    border: darkgoldenrod !important;
+    border-style: double !important;
+  
+}
+
+h4 {
+    font-size: 15;
+    margin-right: 120;
+     font-family: 'Century Gothic', sans-serif;
+    color:floralwhite;
+    margin-left: 470;
+    opacity: 0.7;
+    line-height: 1.3;
+     letter-spacing: .01em;
+    border-style: double;
+    border-color: darkgoldenrod;
+    margin-top: -10;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+h5 {
+    font-size: 15;
+    margin-right: 150;
+     font-family: 'Century Gothic', sans-serif;
+    color:floralwhite;
+    margin-left: 470;
+    opacity: 0.9;
+    line-height: 1.3;
+     letter-spacing: .01em;
+    border-style: double;
+    border-color: darkgoldenrod;
+    margin-top: -10;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5;
+    
+}
+
+h1 {
+    font-size: 15;
+    margin-right: 10;
+     font-family: 'Century Gothic', sans-serif;
+    color:floralwhite;
+    margin-left: 470;
+    opacity: 0.7;
+    line-height: 1.3;
+     letter-spacing: .01em;
+    border-style: double;
+    border-color: darkgoldenrod;
+    margin-top: -10;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+img.blog2pic {
+    float: right;
+    margin-right: 100;
+    position: relative;
+    object-position: bottom;
+    max-height: 400;
+    max-width: 310;
+    border: darkgoldenrod !important;
+    border-style: double !important;
+  
+}
+
+#springblog, #sangeetblog, #outdoorblog {
+    font-size: 14;
+     font-family: 'Century Gothic', sans-serif;
+    color:floralwhite;
+    opacity: 0.9;
+    line-height: 1.3;
+     letter-spacing: .01em;
+    margin-left: 100 !important;
+    margin-right: 450;
+    border-style: double;
+    border-color: darkgoldenrod;
+    margin-top: -10;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5;
+}
+
+
+#blushblog{
+    font-size: 13;
+    margin-left: 570;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5;
+}
+
+#sangeetblog {
+    font-size: 13;
+    margin-left: 570;
+    color: floralwhite;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+#copyblog {
+    font-size: 13;
+    margin-left: 560;
+    color: floralwhite;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5;
+}
+
+#headtableblog {
+    font-size: 10;
+    margin-left: 450;
+    color: floralwhite;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5;
+    
+}
+#headtableblogslide {
+    padding-left: 20;
+    margin-right: 10 !important;
+    
+}
+
+#stressblog {
+    font-size: 13;
+    margin-left: 430;
+    color: floralwhite;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 5;
+}
+
+#tableblog {
+     font-size: 15;
+     font-family: 'Century Gothic', sans-serif;
+    color:floralwhite;
+    opacity: 0.9;
+    line-height: 1.3;
+     letter-spacing: .01em;
+    margin-left: 460 !important;
+    margin-right: 450;
+    border-style: double;
+    border-color: darkgoldenrod;
+    margin-top: -10;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5;
+}
+
+#dreamyblog {
+    font-size: 14;
+    margin-left: 550;
+    color: floralwhite;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5;
+    
+}
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -80;
+}
+    
+    
+    
+}
+
+h4#gothicblog !important {
+     font-size: 10 !important;
+     font-family: 'Century Gothic', sans-serif;
+    color:floralwhite;
+    opacity: 0.9;
+    line-height: 1.3;
+     letter-spacing: .01em;
+    margin-left: 100 !important;
+    margin-right: 100;
+    border-style: double;
+    border-color: darkgoldenrod;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5;
+}
+
+}
 
 
 /*end of blog styling*/
